@@ -4,192 +4,221 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-AddChildToRootList	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::AddChildToRootList(){$/;"	f	class:Fibonacci_Heap
+AddChildToRootList	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::AddChildToRootList(){$/;"	f	class:Fibonacci_Heap
 AdjList	../Adjacent_List/include/AdjList.h	/^        AdjList() : LinkedListNode(), LinkedList(){};$/;"	f	class:AdjList
 AdjList	../Adjacent_List/include/AdjList.h	/^class AdjList : public LinkedListNode, public LinkedList{$/;"	c
-BuildTestExample	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::BuildTestExample(){$/;"	f	class:Fibonacci_Heap
+BuildTestExample	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::BuildTestExample(){$/;"	f	class:Fibonacci_Heap
 CC	../Adjacent_List/Makefile	/^CC = g++$/;"	m
-CC	../Fibonacci_Heap_ex/Makefile	/^CC = g++$/;"	m
-CC	../Linked_List_ex/Makefile	/^CC = g++$/;"	m
+CC	../Fibonacci_Heap/Makefile	/^CC = g++$/;"	m
+CC	../Linked_List/Makefile	/^CC = g++$/;"	m
+CC	../Union_Find/Makefile	/^CC = g++$/;"	m
 CC	./Makefile	/^CC = g++$/;"	m
 CFLAGS	../Adjacent_List/Makefile	/^CFLAGS = -g -Wall -O3 -std=c++11 $/;"	m
-CFLAGS	../Fibonacci_Heap_ex/Makefile	/^CFLAGS = -g -Wall -O3 $/;"	m
-CFLAGS	../Linked_List_ex/Makefile	/^CFLAGS = -g -Wall -O3 $/;"	m
+CFLAGS	../Fibonacci_Heap/Makefile	/^CFLAGS = -g -Wall -O3 $/;"	m
+CFLAGS	../Linked_List/Makefile	/^CFLAGS = -g -Wall -O3 $/;"	m
+CFLAGS	../Union_Find/Makefile	/^CFLAGS = -g -Wall -O3 -std=c++11 $/;"	m
 CFLAGS	./Makefile	/^CFLAGS = -g -Wall -O3 -std=c++11 $/;"	m
 COMPILE_FLAGS	../Adjacent_List/Makefile	/^COMPILE_FLAGS = -c$/;"	m
-COMPILE_FLAGS	../Fibonacci_Heap_ex/Makefile	/^COMPILE_FLAGS = -c$/;"	m
-COMPILE_FLAGS	../Linked_List_ex/Makefile	/^COMPILE_FLAGS = -c$/;"	m
+COMPILE_FLAGS	../Fibonacci_Heap/Makefile	/^COMPILE_FLAGS = -c$/;"	m
+COMPILE_FLAGS	../Linked_List/Makefile	/^COMPILE_FLAGS = -c$/;"	m
+COMPILE_FLAGS	../Union_Find/Makefile	/^COMPILE_FLAGS = -c$/;"	m
 COMPILE_FLAGS	./Makefile	/^COMPILE_FLAGS = -c$/;"	m
-CTAGS_FILES	../Adjacent_List/Makefile	/^CTAGS_FILES = .\/include ..\/Linked_List_ex ..\/Linked_List_ex\/include$/;"	m
-CTAGS_FILES	./Makefile	/^CTAGS_FILES = .\/include ..\/Fibonacci_Heap_ex ..\/Fibonacci_Heap_ex\/include ..\/Linked_List_ex ..\/Linked_List_ex\/include ..\/Adjacent_List ..\/Adjacent_List\/include ..\/MST_Edge\/include$/;"	m
+CTAGS_FILES	../Adjacent_List/Makefile	/^CTAGS_FILES = .\/include ..\/Linked_List ..\/Linked_List\/include$/;"	m
+CTAGS_FILES	../Union_Find/Makefile	/^CTAGS_FILES = .\/include ..\/Linked_List ..\/Linked_List\/include$/;"	m
+CTAGS_FILES	./Makefile	/^CTAGS_FILES = .\/include ..\/Fibonacci_Heap ..\/Fibonacci_Heap\/include ..\/Linked_List ..\/Linked_List\/include ..\/Adjacent_List ..\/Adjacent_List\/include ..\/MST_Edge\/include ..\/Union_Find ..\/Union_Find\/include$/;"	m
 CTAGS_FLAGS	../Adjacent_List/Makefile	/^CTAGS_FLAGS = $(foreach d, $(CTAGS_FILES),-a $d\/*)$/;"	m
+CTAGS_FLAGS	../Union_Find/Makefile	/^CTAGS_FLAGS = $(foreach d, $(CTAGS_FILES),-a $d\/*)$/;"	m
 CTAGS_FLAGS	./Makefile	/^CTAGS_FLAGS = $(foreach d, $(CTAGS_FILES),-a $d\/*)$/;"	m
 CTAGS_UTIL	../Adjacent_List/Makefile	/^CTAGS_UTIL = \/usr\/local\/bin\/$/;"	m
-CTAGS_UTIL	../Fibonacci_Heap_ex/Makefile	/^CTAGS_UTIL = \/usr\/local\/bin\/$/;"	m
-CTAGS_UTIL	../Linked_List_ex/Makefile	/^CTAGS_UTIL = \/usr\/local\/bin\/$/;"	m
+CTAGS_UTIL	../Fibonacci_Heap/Makefile	/^CTAGS_UTIL = \/usr\/local\/bin\/$/;"	m
+CTAGS_UTIL	../Linked_List/Makefile	/^CTAGS_UTIL = \/usr\/local\/bin\/$/;"	m
+CTAGS_UTIL	../Union_Find/Makefile	/^CTAGS_UTIL = \/usr\/local\/bin\/$/;"	m
 CTAGS_UTIL	./Makefile	/^CTAGS_UTIL = \/usr\/local\/bin\/$/;"	m
-CalculateDepth	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^int Fibonacci_Heap::CalculateDepth(FTNode* const current_child_node, const int depth){$/;"	f	class:Fibonacci_Heap
-CascadeCut	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::CascadeCut(FTNode* const y){$/;"	f	class:Fibonacci_Heap
-CheckIsTheEdge	./Kruskal.cpp	/^bool Kruskal_Algorithm::CheckIsTheEdge(std::unordered_map<LinkedListNode*, std::unordered_map<LinkedListNode*, int>> &map_weight, LinkedListNode* const candidate_parent, const int &edge_weight, LinkedListNode* const min_ll_node, std::unordered_map<LinkedListNode*, FTNode*> map_node_ll2ft){$/;"	f	class:Kruskal_Algorithm
-CleanAll	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::CleanAll(){$/;"	f	class:LinkedList
-ConcatenateRootList	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::ConcatenateRootList(Fibonacci_Heap &H_in){$/;"	f	class:Fibonacci_Heap
-Consolidate	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::Consolidate(){$/;"	f	class:Fibonacci_Heap
-Cut	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::Cut(FTNode* const x){$/;"	f	class:Fibonacci_Heap
-DecreaseKey	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^bool Fibonacci_Heap::DecreaseKey(FTNode* const x, const int changed_key){$/;"	f	class:Fibonacci_Heap
-Delete	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^bool Fibonacci_Heap::Delete(FTNode* const x){$/;"	f	class:Fibonacci_Heap
-Delete	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::Delete(LinkedListNode* const deleted_node){$/;"	f	class:LinkedList
-Delete	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::Delete(const int value){$/;"	f	class:LinkedList
-ExchangeNode	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline void ExchangeNode(FTNode* &a, FTNode* &b){FTNode* tmp = a;a = b;b = tmp;};$/;"	f	class:Fibonacci_Heap
-ExtractMin	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^FTNode* Fibonacci_Heap::ExtractMin(){$/;"	f	class:Fibonacci_Heap
-FTNode	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode() : key(0), degree(0), mark(false), is_exist(true), level(0), name("NULL"), parent(NULL), child(NULL), right_sibling(this), left_sibling(this){};$/;"	f	class:FTNode
-FTNode	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode(const int value) : key(value), degree(0), mark(false), is_exist(true), level(0), name("NULL"), parent(NULL), child(NULL), right_sibling(this), left_sibling(this){};$/;"	f	class:FTNode
-FTNode	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode(const int value, const std::string name_val) : key(value), degree(0), mark(false), is_exist(true), level(0), name(name_val), parent(NULL), child(NULL), right_sibling(this), left_sibling(this){};$/;"	f	class:FTNode
-FTNode	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode(const int value1, const int value2, const bool value3, const int value4) : key(value1), degree(value2), mark(value3), is_exist(true), level(value4), name("NULL"), parent(NULL), child(NULL), right_sibling(this), left_sibling(this){};$/;"	f	class:FTNode
-FTNode	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^class FTNode{$/;"	c
-Fibonacci_Heap	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        Fibonacci_Heap() : root_list_size(0), total_node_num(0), head_root_list(NULL), tail_root_list(NULL), min_pointer(NULL){};$/;"	f	class:Fibonacci_Heap
-Fibonacci_Heap	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^class Fibonacci_Heap{$/;"	c
-FindMST	./Kruskal.cpp	/^void Kruskal_Algorithm::FindMST(Fibonacci_Heap &fib_heap_q, std::vector<MST_Edge*> &final_mst, std::unordered_map<FTNode*, LinkedListNode*> &map_node_ft2ll, std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, std::unordered_map<LinkedListNode*, FTNode*> map_node_ll2ft, AdjList &adj_list){$/;"	f	class:Kruskal_Algorithm
-FindMin	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline FTNode* FindMin(){if(min_pointer != NULL){return min_pointer;}else{std::cout<<"Error : The Fibonacci_Heap is empty."<<std::endl;return NULL;}};$/;"	f	class:Fibonacci_Heap
-GetAllData	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::GetAllData(int* const input_arr){$/;"	f	class:LinkedList
-GetData	../Linked_List_ex/include/Linked_List.h	/^        inline int              GetData(){return data;};$/;"	f	class:LinkedListNode
-GetExist	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline bool         GetExist(){return is_exist;};$/;"	f	class:FTNode
-GetFristNode	../Linked_List_ex/include/Linked_List.h	/^        inline LinkedListNode*  GetFristNode(){return first;};$/;"	f	class:LinkedList
-GetHeadRootList	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline FTNode* GetHeadRootList(){return head_root_list;};$/;"	f	class:Fibonacci_Heap
-GetKey	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline int          GetKey(){return key;};$/;"	f	class:FTNode
-GetLastNode	../Linked_List_ex/include/Linked_List.h	/^        inline LinkedListNode*  GetLastNode(){return last;};$/;"	f	class:LinkedList
-GetListSize	../Linked_List_ex/include/Linked_List.h	/^        inline int              GetListSize(){return size_of_list;};$/;"	f	class:LinkedList
-GetName	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline std::string  GetName(){return name;};$/;"	f	class:FTNode
-GetName	../Linked_List_ex/include/Linked_List.h	/^        inline std::string      GetName(){return name;};$/;"	f	class:LinkedListNode
-GetNext	../Linked_List_ex/include/Linked_List.h	/^        inline LinkedListNode*  GetNext(){return next;};$/;"	f	class:LinkedListNode
-GetRootListSize	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline int     GetRootListSize(){return root_list_size;};$/;"	f	class:Fibonacci_Heap
-GetTailRootList	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline FTNode* GetTailRootList(){return tail_root_list;};$/;"	f	class:Fibonacci_Heap
-GetTotalNodeNum	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline int     GetTotalNodeNum(){return total_node_num;};$/;"	f	class:Fibonacci_Heap
-HeapLink	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::HeapLink(FTNode* &y, FTNode* &x){$/;"	f	class:Fibonacci_Heap
-INCLUDE_FILES	../Adjacent_List/Makefile	/^INCLUDE_FILES = .\/include ..\/Linked_List_ex\/include$/;"	m
-INCLUDE_FILES	../Fibonacci_Heap_ex/Makefile	/^INCLUDE_FILES = .\/include$/;"	m
-INCLUDE_FILES	../Linked_List_ex/Makefile	/^INCLUDE_FILES = .\/include$/;"	m
-INCLUDE_FILES	./Makefile	/^INCLUDE_FILES = .\/include ..\/Fibonacci_Heap_ex\/include ..\/Linked_List_ex\/include ..\/Adjacent_List\/include ..\/MST_Edge\/include$/;"	m
+CalculateDepth	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^int Fibonacci_Heap::CalculateDepth(FTNode* const current_child_node, const int depth){$/;"	f	class:Fibonacci_Heap
+CascadeCut	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::CascadeCut(FTNode* const y){$/;"	f	class:Fibonacci_Heap
+CleanAll	../Linked_List/Linked_List.cpp	/^void LinkedList::CleanAll(){$/;"	f	class:LinkedList
+ConcatenateRootList	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::ConcatenateRootList(Fibonacci_Heap &H_in){$/;"	f	class:Fibonacci_Heap
+Consolidate	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::Consolidate(){$/;"	f	class:Fibonacci_Heap
+Cut	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::Cut(FTNode* const x){$/;"	f	class:Fibonacci_Heap
+DecreaseKey	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^bool Fibonacci_Heap::DecreaseKey(FTNode* const x, const int changed_key){$/;"	f	class:Fibonacci_Heap
+Delete	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^bool Fibonacci_Heap::Delete(FTNode* const x){$/;"	f	class:Fibonacci_Heap
+Delete	../Linked_List/Linked_List.cpp	/^void LinkedList::Delete(LinkedListNode* const deleted_node){$/;"	f	class:LinkedList
+Delete	../Linked_List/Linked_List.cpp	/^void LinkedList::Delete(const int value){$/;"	f	class:LinkedList
+ExchangeNode	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        inline void ExchangeNode(FTNode* &a, FTNode* &b){FTNode* tmp = a;a = b;b = tmp;};$/;"	f	class:Fibonacci_Heap
+ExtractMin	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^FTNode* Fibonacci_Heap::ExtractMin(){$/;"	f	class:Fibonacci_Heap
+FTNode	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        FTNode() : key(0), degree(0), mark(false), is_exist(true), level(0), name("NULL"), parent(NULL), child(NULL), right_sibling(this), left_sibling(this){};$/;"	f	class:FTNode
+FTNode	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        FTNode(const int value) : key(value), degree(0), mark(false), is_exist(true), level(0), name("NULL"), parent(NULL), child(NULL), right_sibling(this), left_sibling(this){};$/;"	f	class:FTNode
+FTNode	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        FTNode(const int value, const std::string name_val) : key(value), degree(0), mark(false), is_exist(true), level(0), name(name_val), parent(NULL), child(NULL), right_sibling(this), left_sibling(this){};$/;"	f	class:FTNode
+FTNode	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        FTNode(const int value1, const int value2, const bool value3, const int value4) : key(value1), degree(value2), mark(value3), is_exist(true), level(value4), name("NULL"), parent(NULL), child(NULL), right_sibling(this), left_sibling(this){};$/;"	f	class:FTNode
+FTNode	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^class FTNode{$/;"	c
+Fibonacci_Heap	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        Fibonacci_Heap() : root_list_size(0), total_node_num(0), head_root_list(NULL), tail_root_list(NULL), min_pointer(NULL){};$/;"	f	class:Fibonacci_Heap
+Fibonacci_Heap	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^class Fibonacci_Heap{$/;"	c
+Find	../Union_Find/Union_Find.cpp	/^LinkedListNode* const UnionFind::Find(LinkedListNode* const u_node){$/;"	f	class:UnionFind
+FindMST	./Kruskal.cpp	/^void Kruskal_Algorithm::FindMST(Fibonacci_Heap &fib_heap_q, std::vector<MST_Edge*> &final_mst, AdjList &adj_list, const int all_node_size, std::unordered_map<FTNode*, MST_Edge*> map_node_ft2edge){$/;"	f	class:Kruskal_Algorithm
+FindMin	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        inline FTNode* FindMin(){if(min_pointer != NULL){return min_pointer;}else{std::cout<<"Error : The Fibonacci_Heap is empty."<<std::endl;return NULL;}};$/;"	f	class:Fibonacci_Heap
+GetAllData	../Linked_List/Linked_List.cpp	/^void LinkedList::GetAllData(int* const input_arr){$/;"	f	class:LinkedList
+GetData	../Linked_List/include/Linked_List.h	/^        inline int              GetData(){return data;};$/;"	f	class:LinkedListNode
+GetExist	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        inline bool         GetExist(){return is_exist;};$/;"	f	class:FTNode
+GetFristNode	../Linked_List/include/Linked_List.h	/^        inline LinkedListNode*  GetFristNode(){return first;};$/;"	f	class:LinkedList
+GetHeadRootList	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        inline FTNode* GetHeadRootList(){return head_root_list;};$/;"	f	class:Fibonacci_Heap
+GetKey	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        inline int          GetKey(){return key;};$/;"	f	class:FTNode
+GetLastNode	../Linked_List/include/Linked_List.h	/^        inline LinkedListNode*  GetLastNode(){return last;};$/;"	f	class:LinkedList
+GetListSize	../Linked_List/include/Linked_List.h	/^        inline int              GetListSize(){return size_of_list;};$/;"	f	class:LinkedList
+GetMaxWeight	../Union_Find/include/Union_Find.h	/^        inline          int     GetMaxWeight(){return max_weight;};$/;"	f	class:UnionFind
+GetName	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        inline std::string  GetName(){return name;};$/;"	f	class:FTNode
+GetName	../Linked_List/include/Linked_List.h	/^        inline std::string      GetName(){return name;};$/;"	f	class:LinkedListNode
+GetNext	../Linked_List/include/Linked_List.h	/^        inline LinkedListNode*  GetNext(){return next;};$/;"	f	class:LinkedListNode
+GetRootListSize	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        inline int     GetRootListSize(){return root_list_size;};$/;"	f	class:Fibonacci_Heap
+GetTailRootList	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        inline FTNode* GetTailRootList(){return tail_root_list;};$/;"	f	class:Fibonacci_Heap
+GetTotalNodeNum	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        inline int     GetTotalNodeNum(){return total_node_num;};$/;"	f	class:Fibonacci_Heap
+HeapLink	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::HeapLink(FTNode* &y, FTNode* &x){$/;"	f	class:Fibonacci_Heap
+INCLUDE_FILES	../Adjacent_List/Makefile	/^INCLUDE_FILES = .\/include ..\/Linked_List\/include$/;"	m
+INCLUDE_FILES	../Fibonacci_Heap/Makefile	/^INCLUDE_FILES = .\/include$/;"	m
+INCLUDE_FILES	../Linked_List/Makefile	/^INCLUDE_FILES = .\/include$/;"	m
+INCLUDE_FILES	../Union_Find/Makefile	/^INCLUDE_FILES = .\/include ..\/Linked_List\/include$/;"	m
+INCLUDE_FILES	./Makefile	/^INCLUDE_FILES = .\/include ..\/Fibonacci_Heap\/include ..\/Linked_List\/include ..\/Adjacent_List\/include ..\/MST_Edge\/include ..\/Union_Find\/include$/;"	m
 INCLUDE_FLAGS	../Adjacent_List/Makefile	/^INCLUDE_FLAGS = $(foreach d, $(INCLUDE_FILES), -I $d)$/;"	m
-INCLUDE_FLAGS	../Fibonacci_Heap_ex/Makefile	/^INCLUDE_FLAGS = -I $(INCLUDE_FILES)$/;"	m
-INCLUDE_FLAGS	../Linked_List_ex/Makefile	/^INCLUDE_FLAGS = -I $(INCLUDE_FILES)$/;"	m
+INCLUDE_FLAGS	../Fibonacci_Heap/Makefile	/^INCLUDE_FLAGS = -I $(INCLUDE_FILES)$/;"	m
+INCLUDE_FLAGS	../Linked_List/Makefile	/^INCLUDE_FLAGS = -I $(INCLUDE_FILES)$/;"	m
+INCLUDE_FLAGS	../Union_Find/Makefile	/^INCLUDE_FLAGS = $(foreach d, $(INCLUDE_FILES), -I $d)$/;"	m
 INCLUDE_FLAGS	./Makefile	/^INCLUDE_FLAGS = $(foreach d, $(INCLUDE_FILES), -I $d)$/;"	m
-InitialSet	./Kruskal.cpp	/^void Kruskal_Algorithm::InitialSet(Fibonacci_Heap &fib_heap_q, const std::vector<LinkedListNode*> &all_node, std::unordered_map<FTNode*, MST_Edge*> map_node_ft2edge, std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, AdjList &adj_list){$/;"	f	class:Kruskal_Algorithm
-InsertArbitrary	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::InsertArbitrary(FTNode* const inserted_node){$/;"	f	class:Fibonacci_Heap
-InsertArbitrary	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::InsertArbitrary(const int key){$/;"	f	class:Fibonacci_Heap
-InsertArbitrary	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::InsertArbitrary(const int loc, LinkedListNode* const inserted_node){\/\/count from 0$/;"	f	class:LinkedList
-InsertArbitrary	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::InsertArbitrary(const int loc, const int value){\/\/count from 0$/;"	f	class:LinkedList
-InsertArbitrary	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::InsertArbitrary(const int loc, const int value, const std::string val_str){\/\/count from 0$/;"	f	class:LinkedList
-InsertFront	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::InsertFront(LinkedListNode* const inserted_node){$/;"	f	class:LinkedList
-InsertFront	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::InsertFront(const int value){$/;"	f	class:LinkedList
-InsertFront	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::InsertFront(const int value, const std::string val_str){$/;"	f	class:LinkedList
-InsertTail	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::InsertTail(LinkedListNode* const inserted_node){$/;"	f	class:LinkedList
-InsertTail	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::InsertTail(const int value){$/;"	f	class:LinkedList
-InsertTail	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::InsertTail(const int value, const std::string val_str){$/;"	f	class:LinkedList
+InitialSet	./Kruskal.cpp	/^void Kruskal_Algorithm::InitialSet(Fibonacci_Heap &fib_heap_q, const std::vector<LinkedListNode*> &all_node, std::unordered_map<FTNode*, MST_Edge*> &map_node_ft2edge, std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, AdjList &adj_list){$/;"	f	class:Kruskal_Algorithm
+InsertArbitrary	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::InsertArbitrary(FTNode* const inserted_node){$/;"	f	class:Fibonacci_Heap
+InsertArbitrary	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::InsertArbitrary(const int key){$/;"	f	class:Fibonacci_Heap
+InsertArbitrary	../Linked_List/Linked_List.cpp	/^void LinkedList::InsertArbitrary(const int loc, LinkedListNode* const inserted_node){\/\/count from 0$/;"	f	class:LinkedList
+InsertArbitrary	../Linked_List/Linked_List.cpp	/^void LinkedList::InsertArbitrary(const int loc, const int value){\/\/count from 0$/;"	f	class:LinkedList
+InsertArbitrary	../Linked_List/Linked_List.cpp	/^void LinkedList::InsertArbitrary(const int loc, const int value, const std::string val_str){\/\/count from 0$/;"	f	class:LinkedList
+InsertFront	../Linked_List/Linked_List.cpp	/^void LinkedList::InsertFront(LinkedListNode* const inserted_node){$/;"	f	class:LinkedList
+InsertFront	../Linked_List/Linked_List.cpp	/^void LinkedList::InsertFront(const int value){$/;"	f	class:LinkedList
+InsertFront	../Linked_List/Linked_List.cpp	/^void LinkedList::InsertFront(const int value, const std::string val_str){$/;"	f	class:LinkedList
+InsertTail	../Linked_List/Linked_List.cpp	/^void LinkedList::InsertTail(LinkedListNode* const inserted_node){$/;"	f	class:LinkedList
+InsertTail	../Linked_List/Linked_List.cpp	/^void LinkedList::InsertTail(const int value){$/;"	f	class:LinkedList
+InsertTail	../Linked_List/Linked_List.cpp	/^void LinkedList::InsertTail(const int value, const std::string val_str){$/;"	f	class:LinkedList
 Kruskal_Algorithm	./include/Kruskal.h	/^namespace Kruskal_Algorithm{$/;"	n
-LinkedList	../Linked_List_ex/include/Linked_List.h	/^        LinkedList() : first(NULL), last(NULL), size_of_list(0){};$/;"	f	class:LinkedList
-LinkedList	../Linked_List_ex/include/Linked_List.h	/^class LinkedList{$/;"	c
-LinkedListNode	../Linked_List_ex/include/Linked_List.h	/^        LinkedListNode() : data(0), name("NULL"), next(NULL){};$/;"	f	class:LinkedListNode
-LinkedListNode	../Linked_List_ex/include/Linked_List.h	/^        LinkedListNode(const int value) : data(value), name("NULL"), next(NULL){};$/;"	f	class:LinkedListNode
-LinkedListNode	../Linked_List_ex/include/Linked_List.h	/^        LinkedListNode(const int value, const std::string val_str) : data(value), name(val_str), next(NULL){};$/;"	f	class:LinkedListNode
-LinkedListNode	../Linked_List_ex/include/Linked_List.h	/^class LinkedListNode{$/;"	c
+Link	../Union_Find/Union_Find.cpp	/^void UnionFind::Link(LinkedListNode* const u_node, LinkedListNode* const v_node){$/;"	f	class:UnionFind
+LinkedList	../Linked_List/include/Linked_List.h	/^        LinkedList() : first(NULL), last(NULL), size_of_list(0){};$/;"	f	class:LinkedList
+LinkedList	../Linked_List/include/Linked_List.h	/^class LinkedList{$/;"	c
+LinkedListNode	../Linked_List/include/Linked_List.h	/^        LinkedListNode() : data(0), name("NULL"), next(NULL){};$/;"	f	class:LinkedListNode
+LinkedListNode	../Linked_List/include/Linked_List.h	/^        LinkedListNode(const int value) : data(value), name("NULL"), next(NULL){};$/;"	f	class:LinkedListNode
+LinkedListNode	../Linked_List/include/Linked_List.h	/^        LinkedListNode(const int value, const std::string val_str) : data(value), name(val_str), next(NULL){};$/;"	f	class:LinkedListNode
+LinkedListNode	../Linked_List/include/Linked_List.h	/^class LinkedListNode{$/;"	c
 MAIN_OBJECT_EXEC	../Adjacent_List/Makefile	/^MAIN_OBJECT_EXEC = $(MAIN_OBJECT_NAME).o$/;"	m
-MAIN_OBJECT_EXEC	../Fibonacci_Heap_ex/Makefile	/^MAIN_OBJECT_EXEC = $(MAIN_OBJECT_NAME).o$/;"	m
-MAIN_OBJECT_EXEC	../Linked_List_ex/Makefile	/^MAIN_OBJECT_EXEC = $(MAIN_OBJECT_NAME).o$/;"	m
+MAIN_OBJECT_EXEC	../Fibonacci_Heap/Makefile	/^MAIN_OBJECT_EXEC = $(MAIN_OBJECT_NAME).o$/;"	m
+MAIN_OBJECT_EXEC	../Linked_List/Makefile	/^MAIN_OBJECT_EXEC = $(MAIN_OBJECT_NAME).o$/;"	m
+MAIN_OBJECT_EXEC	../Union_Find/Makefile	/^MAIN_OBJECT_EXEC = $(MAIN_OBJECT_NAME).o$/;"	m
 MAIN_OBJECT_EXEC	./Makefile	/^MAIN_OBJECT_EXEC = $(MAIN_OBJECT_NAME).o$/;"	m
 MAIN_OBJECT_EXEC_MAIN	../Adjacent_List/Makefile	/^MAIN_OBJECT_EXEC_MAIN = $(MAIN_OBJECT_NAME_MAIN).o$/;"	m
-MAIN_OBJECT_EXEC_MAIN	../Fibonacci_Heap_ex/Makefile	/^MAIN_OBJECT_EXEC_MAIN = $(MAIN_OBJECT_NAME_MAIN).o$/;"	m
+MAIN_OBJECT_EXEC_MAIN	../Fibonacci_Heap/Makefile	/^MAIN_OBJECT_EXEC_MAIN = $(MAIN_OBJECT_NAME_MAIN).o$/;"	m
+MAIN_OBJECT_EXEC_MAIN	../Union_Find/Makefile	/^MAIN_OBJECT_EXEC_MAIN = $(MAIN_OBJECT_NAME_MAIN).o$/;"	m
 MAIN_OBJECT_EXEC_MAIN	./Makefile	/^MAIN_OBJECT_EXEC_MAIN = $(MAIN_OBJECT_NAME_MAIN).o$/;"	m
 MAIN_OBJECT_EXEC_OUTPUT	../Adjacent_List/Makefile	/^MAIN_OBJECT_EXEC_OUTPUT = ..\/exec_output\/$/;"	m
-MAIN_OBJECT_EXEC_OUTPUT	../Fibonacci_Heap_ex/Makefile	/^MAIN_OBJECT_EXEC_OUTPUT = ..\/exec_output\/$/;"	m
-MAIN_OBJECT_EXEC_OUTPUT	../Linked_List_ex/Makefile	/^MAIN_OBJECT_EXEC_OUTPUT = ..\/exec_output\/$/;"	m
+MAIN_OBJECT_EXEC_OUTPUT	../Fibonacci_Heap/Makefile	/^MAIN_OBJECT_EXEC_OUTPUT = ..\/exec_output\/$/;"	m
+MAIN_OBJECT_EXEC_OUTPUT	../Linked_List/Makefile	/^MAIN_OBJECT_EXEC_OUTPUT = ..\/exec_output\/$/;"	m
+MAIN_OBJECT_EXEC_OUTPUT	../Union_Find/Makefile	/^MAIN_OBJECT_EXEC_OUTPUT = ..\/exec_output\/$/;"	m
 MAIN_OBJECT_EXEC_OUTPUT	./Makefile	/^MAIN_OBJECT_EXEC_OUTPUT = ..\/exec_output\/$/;"	m
 MAIN_OBJECT_NAME	../Adjacent_List/Makefile	/^MAIN_OBJECT_NAME = AdjList$/;"	m
-MAIN_OBJECT_NAME	../Fibonacci_Heap_ex/Makefile	/^MAIN_OBJECT_NAME = Fibonacci_Heap$/;"	m
-MAIN_OBJECT_NAME	../Linked_List_ex/Makefile	/^MAIN_OBJECT_NAME = Linked_List_main$/;"	m
+MAIN_OBJECT_NAME	../Fibonacci_Heap/Makefile	/^MAIN_OBJECT_NAME = Fibonacci_Heap$/;"	m
+MAIN_OBJECT_NAME	../Linked_List/Makefile	/^MAIN_OBJECT_NAME = Linked_List_main$/;"	m
+MAIN_OBJECT_NAME	../Union_Find/Makefile	/^MAIN_OBJECT_NAME = Union_Find$/;"	m
 MAIN_OBJECT_NAME	./Makefile	/^MAIN_OBJECT_NAME = Kruskal$/;"	m
 MAIN_OBJECT_NAME_MAIN	../Adjacent_List/Makefile	/^MAIN_OBJECT_NAME_MAIN = AdjList_main$/;"	m
-MAIN_OBJECT_NAME_MAIN	../Fibonacci_Heap_ex/Makefile	/^MAIN_OBJECT_NAME_MAIN = Fibonacci_Heap_main$/;"	m
+MAIN_OBJECT_NAME_MAIN	../Fibonacci_Heap/Makefile	/^MAIN_OBJECT_NAME_MAIN = Fibonacci_Heap_main$/;"	m
+MAIN_OBJECT_NAME_MAIN	../Union_Find/Makefile	/^MAIN_OBJECT_NAME_MAIN = Union_Find_main$/;"	m
 MAIN_OBJECT_NAME_MAIN	./Makefile	/^MAIN_OBJECT_NAME_MAIN = Kruskal_main$/;"	m
 MAIN_OBJECT_SOURCE	../Adjacent_List/Makefile	/^MAIN_OBJECT_SOURCE = $(MAIN_OBJECT_NAME).cpp$/;"	m
-MAIN_OBJECT_SOURCE	../Fibonacci_Heap_ex/Makefile	/^MAIN_OBJECT_SOURCE = $(MAIN_OBJECT_NAME).cpp$/;"	m
-MAIN_OBJECT_SOURCE	../Linked_List_ex/Makefile	/^MAIN_OBJECT_SOURCE = $(MAIN_OBJECT_NAME).cpp$/;"	m
+MAIN_OBJECT_SOURCE	../Fibonacci_Heap/Makefile	/^MAIN_OBJECT_SOURCE = $(MAIN_OBJECT_NAME).cpp$/;"	m
+MAIN_OBJECT_SOURCE	../Linked_List/Makefile	/^MAIN_OBJECT_SOURCE = $(MAIN_OBJECT_NAME).cpp$/;"	m
+MAIN_OBJECT_SOURCE	../Union_Find/Makefile	/^MAIN_OBJECT_SOURCE = $(MAIN_OBJECT_NAME).cpp$/;"	m
 MAIN_OBJECT_SOURCE	./Makefile	/^MAIN_OBJECT_SOURCE = $(MAIN_OBJECT_NAME).cpp$/;"	m
 MAIN_OBJECT_SOURCE_MAIN	../Adjacent_List/Makefile	/^MAIN_OBJECT_SOURCE_MAIN = $(MAIN_OBJECT_NAME_MAIN).cpp$/;"	m
-MAIN_OBJECT_SOURCE_MAIN	../Fibonacci_Heap_ex/Makefile	/^MAIN_OBJECT_SOURCE_MAIN = $(MAIN_OBJECT_NAME_MAIN).cpp$/;"	m
+MAIN_OBJECT_SOURCE_MAIN	../Fibonacci_Heap/Makefile	/^MAIN_OBJECT_SOURCE_MAIN = $(MAIN_OBJECT_NAME_MAIN).cpp$/;"	m
+MAIN_OBJECT_SOURCE_MAIN	../Union_Find/Makefile	/^MAIN_OBJECT_SOURCE_MAIN = $(MAIN_OBJECT_NAME_MAIN).cpp$/;"	m
 MAIN_OBJECT_SOURCE_MAIN	./Makefile	/^MAIN_OBJECT_SOURCE_MAIN = $(MAIN_OBJECT_NAME_MAIN).cpp$/;"	m
 MST_Edge	../MST_Edge/include/MST_Edge.h	/^        MST_Edge() : edge_a(NULL), edge_b(NULL), weight(0){};$/;"	f	class:MST_Edge
 MST_Edge	../MST_Edge/include/MST_Edge.h	/^        MST_Edge(LinkedListNode* const a_node, LinkedListNode* const b_node, const int weight_val) : edge_a(a_node), edge_b(b_node), weight(weight_val){};$/;"	f	class:MST_Edge
 MST_Edge	../MST_Edge/include/MST_Edge.h	/^        MST_Edge(const int weight_val) : edge_a(NULL), edge_b(NULL), weight(weight_val){};$/;"	f	class:MST_Edge
 MST_Edge	../MST_Edge/include/MST_Edge.h	/^class MST_Edge{$/;"	c
 PrintAdjList	../Adjacent_List/AdjList.cpp	/^void AdjList::PrintAdjList(std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, LinkedListNode* const head_node, const bool debug_addr, const bool debug_name, const bool debug_key){$/;"	f	class:AdjList
-PrintList	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::PrintList(FTNode* const head_ptr, const int print_width, std::queue<FTNode*> &parent_queue){$/;"	f	class:Fibonacci_Heap
-PrintList	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::PrintList(const bool debug_addr, const bool debug_name, const bool debug_key){$/;"	f	class:LinkedList
+PrintList	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::PrintList(FTNode* const head_ptr, const int print_width, std::queue<FTNode*> &parent_queue){$/;"	f	class:Fibonacci_Heap
+PrintList	../Linked_List/Linked_List.cpp	/^void LinkedList::PrintList(const bool debug_addr, const bool debug_name, const bool debug_key){$/;"	f	class:LinkedList
 PrintMST	./Kruskal.cpp	/^void Kruskal_Algorithm::PrintMST(const std::vector<MST_Edge*> &final_mst, const int print_width){$/;"	f	class:Kruskal_Algorithm
+PrintParent	../Union_Find/include/Union_Find.h	/^        inline          void    PrintParent(LinkedListNode* const u_node){std::cout<<"parent["<<u_node->GetName()<<"] = "<<parent[u_node]->GetName()<<std::endl;};$/;"	f	class:UnionFind
+PrintWeight	../Union_Find/include/Union_Find.h	/^        inline          void    PrintWeight(LinkedListNode* const u_node){std::cout<<"weight["<<u_node->GetName()<<"] = "<<weight[u_node]<<std::endl;};$/;"	f	class:UnionFind
 ReadAdjList	../Adjacent_List/include/AdjList.h	/^        inline LinkedList*  ReadAdjList(LinkedListNode* const head_node) {return map_linked_list[head_node];};$/;"	f	class:AdjList
 ReadMapWeight	../Adjacent_List/include/AdjList.h	/^                            ReadMapWeight() {return map_weight;};$/;"	f	class:AdjList
 Release	./Kruskal.cpp	/^void Kruskal_Algorithm::Release(std::vector<MST_Edge*> &final_mst){$/;"	f	class:Kruskal_Algorithm
-ReleaseRecur	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::ReleaseRecur(FTNode* const current_node){$/;"	f	class:Fibonacci_Heap
+ReleaseRecur	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::ReleaseRecur(FTNode* const current_node){$/;"	f	class:Fibonacci_Heap
 RetEdgeA	../MST_Edge/include/MST_Edge.h	/^        inline LinkedListNode* RetEdgeA(){return edge_a;};$/;"	f	class:MST_Edge
 RetEdgeB	../MST_Edge/include/MST_Edge.h	/^        inline LinkedListNode* RetEdgeB(){return edge_b;};$/;"	f	class:MST_Edge
 RetWeight	../MST_Edge/include/MST_Edge.h	/^        inline int             RetWeight(){return weight;};$/;"	f	class:MST_Edge
-Reverse	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::Reverse(){$/;"	f	class:LinkedList
+Reverse	../Linked_List/Linked_List.cpp	/^void LinkedList::Reverse(){$/;"	f	class:LinkedList
 SUB_ADJ_LIST_SOURCE_PATH	./Makefile	/^SUB_ADJ_LIST_SOURCE_PATH = ..\/Adjacent_List\/$/;"	m
-SUB_FIBONACCI_HEAP_SOURCE_PATH	./Makefile	/^SUB_FIBONACCI_HEAP_SOURCE_PATH = ..\/Fibonacci_Heap_ex\/$/;"	m
-SUB_LINKED_LIST_SOURCE_PATH	../Adjacent_List/Makefile	/^SUB_LINKED_LIST_SOURCE_PATH = ..\/Linked_List_ex\/$/;"	m
-SUB_LINKED_LIST_SOURCE_PATH	./Makefile	/^SUB_LINKED_LIST_SOURCE_PATH = ..\/Linked_List_ex\/$/;"	m
-Search	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^FTNode* Fibonacci_Heap::Search(const int key){$/;"	f	class:Fibonacci_Heap
-SearchRecur	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^FTNode* Fibonacci_Heap::SearchRecur(FTNode* const current_node, const int key){$/;"	f	class:Fibonacci_Heap
+SUB_FIBONACCI_HEAP_SOURCE_PATH	./Makefile	/^SUB_FIBONACCI_HEAP_SOURCE_PATH = ..\/Fibonacci_Heap\/$/;"	m
+SUB_LINKED_LIST_SOURCE_PATH	../Adjacent_List/Makefile	/^SUB_LINKED_LIST_SOURCE_PATH = ..\/Linked_List\/$/;"	m
+SUB_LINKED_LIST_SOURCE_PATH	./Makefile	/^SUB_LINKED_LIST_SOURCE_PATH = ..\/Linked_List\/$/;"	m
+SUB_UNION_FIND_SOURCE_PATH	./Makefile	/^SUB_UNION_FIND_SOURCE_PATH = ..\/Union_Find\/$/;"	m
+Search	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^FTNode* Fibonacci_Heap::Search(const int key){$/;"	f	class:Fibonacci_Heap
+SearchRecur	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^FTNode* Fibonacci_Heap::SearchRecur(FTNode* const current_node, const int key){$/;"	f	class:Fibonacci_Heap
 SetAdjList	../Adjacent_List/AdjList.cpp	/^void AdjList::SetAdjList(LinkedListNode* const head_node, LinkedListNode* const inserted_node, const int weight){$/;"	f	class:AdjList
-SetData	../Linked_List_ex/include/Linked_List.h	/^        inline void             SetData(const int val){data = val;};$/;"	f	class:LinkedListNode
+SetData	../Linked_List/include/Linked_List.h	/^        inline void             SetData(const int val){data = val;};$/;"	f	class:LinkedListNode
 SetEdgeA	../MST_Edge/include/MST_Edge.h	/^        inline void            SetEdgeA(LinkedListNode* const a_node){edge_a = a_node;};$/;"	f	class:MST_Edge
 SetEdgeB	../MST_Edge/include/MST_Edge.h	/^        inline void            SetEdgeB(LinkedListNode* const b_node){edge_b = b_node;};$/;"	f	class:MST_Edge
-SetExist	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline void         SetExist(const bool is_exist_val){is_exist = is_exist_val;};$/;"	f	class:FTNode
-SetKey	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline void         SetKey(const int val){key = val;};$/;"	f	class:FTNode
-SetName	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline void         SetName(const std::string name_val){name = name_val;};$/;"	f	class:FTNode
-SetName	../Linked_List_ex/include/Linked_List.h	/^        inline void             SetName(const std::string val){name = val;};$/;"	f	class:LinkedListNode
-SetNext	../Linked_List_ex/include/Linked_List.h	/^        inline void             SetNext(LinkedListNode* const val){next = val;};$/;"	f	class:LinkedListNode
-SetNodeMap	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::SetNodeMap(FTNode* const current_child_node, const int depth, std::vector<FTNode*>* &node_map){$/;"	f	class:Fibonacci_Heap
+SetExist	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        inline void         SetExist(const bool is_exist_val){is_exist = is_exist_val;};$/;"	f	class:FTNode
+SetKey	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        inline void         SetKey(const int val){key = val;};$/;"	f	class:FTNode
+SetName	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        inline void         SetName(const std::string name_val){name = name_val;};$/;"	f	class:FTNode
+SetName	../Linked_List/include/Linked_List.h	/^        inline void             SetName(const std::string val){name = val;};$/;"	f	class:LinkedListNode
+SetNext	../Linked_List/include/Linked_List.h	/^        inline void             SetNext(LinkedListNode* const val){next = val;};$/;"	f	class:LinkedListNode
+SetNodeMap	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::SetNodeMap(FTNode* const current_child_node, const int depth, std::vector<FTNode*>* &node_map){$/;"	f	class:Fibonacci_Heap
 SetWeight	../MST_Edge/include/MST_Edge.h	/^        inline void            SetWeight(const int weight_val){weight = weight_val;};$/;"	f	class:MST_Edge
-Traverse	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::Traverse(const int print_width, const bool debug){$/;"	f	class:Fibonacci_Heap
-Union	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::Union(Fibonacci_Heap &H_in){$/;"	f	class:Fibonacci_Heap
-UpdateMinPtr	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::UpdateMinPtr(Fibonacci_Heap &H_in){$/;"	f	class:Fibonacci_Heap
+Traverse	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::Traverse(const int print_width, const bool debug){$/;"	f	class:Fibonacci_Heap
+Union	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::Union(Fibonacci_Heap &H_in){$/;"	f	class:Fibonacci_Heap
+Union	../Union_Find/Union_Find.cpp	/^bool UnionFind::Union(LinkedListNode* const u_node, LinkedListNode* const v_node){$/;"	f	class:UnionFind
+UnionFind	../Union_Find/include/Union_Find.h	/^        UnionFind(){max_weight = 1;};$/;"	f	class:UnionFind
+UnionFind	../Union_Find/include/Union_Find.h	/^class UnionFind{$/;"	c
+UpdateMinPtr	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::UpdateMinPtr(Fibonacci_Heap &H_in){$/;"	f	class:Fibonacci_Heap
 _ADJ_LIST_H_	../Adjacent_List/include/AdjList.h	/^#define _ADJ_LIST_H_$/;"	d
-_FIBONACCI_HEAP_H_	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^#define _FIBONACCI_HEAP_H_$/;"	d
+_FIBONACCI_HEAP_H_	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^#define _FIBONACCI_HEAP_H_$/;"	d
 _KRUSKAL_H_	./include/Kruskal.h	/^#define _KRUSKAL_H_$/;"	d
-_LINKED_LIST_H_	../Linked_List_ex/include/Linked_List.h	/^#define _LINKED_LIST_H_$/;"	d
+_LINKED_LIST_H_	../Linked_List/include/Linked_List.h	/^#define _LINKED_LIST_H_$/;"	d
 _MST_EDGE_H_	../MST_Edge/include/MST_Edge.h	/^#define _MST_EDGE_H_$/;"	d
-child	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode*         child;$/;"	m	class:FTNode
+_UNION_FIND_H_	../Union_Find/include/Union_Find.h	/^#define _UNION_FIND_H_$/;"	d
+child	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        FTNode*         child;$/;"	m	class:FTNode
 collect_linked_list	../Adjacent_List/include/AdjList.h	/^    std::vector<LinkedList*> collect_linked_list;$/;"	m	class:AdjList
-data	../Linked_List_ex/include/Linked_List.h	/^        int data;$/;"	m	class:LinkedListNode
-degree	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        int             degree;$/;"	m	class:FTNode
+data	../Linked_List/include/Linked_List.h	/^        int data;$/;"	m	class:LinkedListNode
+degree	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        int             degree;$/;"	m	class:FTNode
 edge_a	../MST_Edge/include/MST_Edge.h	/^    LinkedListNode* edge_a;$/;"	m	class:MST_Edge
 edge_b	../MST_Edge/include/MST_Edge.h	/^    LinkedListNode* edge_b;$/;"	m	class:MST_Edge
-first	../Linked_List_ex/include/Linked_List.h	/^        LinkedListNode* first;$/;"	m	class:LinkedList
-head_root_list	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode* head_root_list;$/;"	m	class:Fibonacci_Heap
-is_exist	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        bool            is_exist;$/;"	m	class:FTNode
-key	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        int             key;$/;"	m	class:FTNode
-last	../Linked_List_ex/include/Linked_List.h	/^        LinkedListNode* last;$/;"	m	class:LinkedList
-left_sibling	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode*         left_sibling;$/;"	m	class:FTNode
-level	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        int             level;$/;"	m	class:FTNode
+first	../Linked_List/include/Linked_List.h	/^        LinkedListNode* first;$/;"	m	class:LinkedList
+head_root_list	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        FTNode* head_root_list;$/;"	m	class:Fibonacci_Heap
+is_exist	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        bool            is_exist;$/;"	m	class:FTNode
+key	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        int             key;$/;"	m	class:FTNode
+last	../Linked_List/include/Linked_List.h	/^        LinkedListNode* last;$/;"	m	class:LinkedList
+left_sibling	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        FTNode*         left_sibling;$/;"	m	class:FTNode
+level	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        int             level;$/;"	m	class:FTNode
 main	../Adjacent_List/AdjList_main.cpp	/^int main(){$/;"	f
-main	../Fibonacci_Heap_ex/Fibonacci_Heap_main.cpp	/^int main(){$/;"	f
-main	../Linked_List_ex/Linked_List_main.cpp	/^int main(){$/;"	f
+main	../Fibonacci_Heap/Fibonacci_Heap_main.cpp	/^int main(){$/;"	f
+main	../Linked_List/Linked_List_main.cpp	/^int main(){$/;"	f
+main	../Union_Find/Union_Find_main.cpp	/^int main(){$/;"	f
 main	./Kruskal_main.cpp	/^int main(){$/;"	f
 map_linked_list	../Adjacent_List/include/AdjList.h	/^    std::unordered_map<LinkedListNode*, LinkedList*> map_linked_list;$/;"	m	class:AdjList
 map_weight	../Adjacent_List/include/AdjList.h	/^    std::unordered_map<LinkedListNode*, std::unordered_map<LinkedListNode*, int>> map_weight;\/\/map_weight[from_edge][to_edge] = weight$/;"	m	class:AdjList
-mark	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        bool            mark;$/;"	m	class:FTNode
-min_pointer	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode* min_pointer;$/;"	m	class:Fibonacci_Heap
-name	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        std::string     name;$/;"	m	class:FTNode
-name	../Linked_List_ex/include/Linked_List.h	/^        std::string name;$/;"	m	class:LinkedListNode
-next	../Linked_List_ex/include/Linked_List.h	/^        LinkedListNode* next;$/;"	m	class:LinkedListNode
-parent	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode*         parent;$/;"	m	class:FTNode
-right_sibling	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode*         right_sibling;$/;"	m	class:FTNode
-root_list_size	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        int root_list_size;$/;"	m	class:Fibonacci_Heap
-size_of_list	../Linked_List_ex/include/Linked_List.h	/^        int size_of_list;$/;"	m	class:LinkedList
-tail_root_list	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode* tail_root_list;$/;"	m	class:Fibonacci_Heap
-total_node_num	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        int total_node_num;$/;"	m	class:Fibonacci_Heap
+mark	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        bool            mark;$/;"	m	class:FTNode
+max_weight	../Union_Find/include/Union_Find.h	/^    int max_weight;$/;"	m	class:UnionFind
+min_pointer	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        FTNode* min_pointer;$/;"	m	class:Fibonacci_Heap
+name	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        std::string     name;$/;"	m	class:FTNode
+name	../Linked_List/include/Linked_List.h	/^        std::string name;$/;"	m	class:LinkedListNode
+next	../Linked_List/include/Linked_List.h	/^        LinkedListNode* next;$/;"	m	class:LinkedListNode
+parent	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        FTNode*         parent;$/;"	m	class:FTNode
+parent	../Union_Find/include/Union_Find.h	/^    std::unordered_map<LinkedListNode*, LinkedListNode*> parent;$/;"	m	class:UnionFind
+right_sibling	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        FTNode*         right_sibling;$/;"	m	class:FTNode
+root_list_size	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        int root_list_size;$/;"	m	class:Fibonacci_Heap
+size_of_list	../Linked_List/include/Linked_List.h	/^        int size_of_list;$/;"	m	class:LinkedList
+tail_root_list	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        FTNode* tail_root_list;$/;"	m	class:Fibonacci_Heap
+total_node_num	../Fibonacci_Heap/include/Fibonacci_Heap.h	/^        int total_node_num;$/;"	m	class:Fibonacci_Heap
 weight	../MST_Edge/include/MST_Edge.h	/^    int weight;$/;"	m	class:MST_Edge
+weight	../Union_Find/include/Union_Find.h	/^    std::unordered_map<LinkedListNode*, int> weight;$/;"	m	class:UnionFind
 ~AdjList	../Adjacent_List/AdjList.cpp	/^AdjList::~AdjList(){$/;"	f	class:AdjList
-~Fibonacci_Heap	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^Fibonacci_Heap::~Fibonacci_Heap(){$/;"	f	class:Fibonacci_Heap
-~LinkedList	../Linked_List_ex/Linked_List.cpp	/^LinkedList::~LinkedList(){$/;"	f	class:LinkedList
+~Fibonacci_Heap	../Fibonacci_Heap/Fibonacci_Heap.cpp	/^Fibonacci_Heap::~Fibonacci_Heap(){$/;"	f	class:Fibonacci_Heap
+~LinkedList	../Linked_List/Linked_List.cpp	/^LinkedList::~LinkedList(){$/;"	f	class:LinkedList
 ~MST_Edge	../MST_Edge/include/MST_Edge.h	/^        ~MST_Edge(){std::cout<<"It is MST_Edge destructor."<<std::endl;edge_a = NULL;edge_b = NULL;weight = 0;};$/;"	f	class:MST_Edge
+~UnionFind	../Union_Find/Union_Find.cpp	/^UnionFind::~UnionFind(){$/;"	f	class:UnionFind

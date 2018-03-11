@@ -37,43 +37,10 @@ int main(){
     all_node.push_back(node_f);
     all_node.push_back(node_d);
     all_node.push_back(node_e);
-    
-    //Generate the correspondent Fibonacci Node.
-    FTNode* node_a_fib = new FTNode(node_a->GetData(), "a");
-    FTNode* node_b_fib = new FTNode(node_b->GetData(), "b");
-    FTNode* node_h_fib = new FTNode(node_h->GetData(), "h");
-    FTNode* node_i_fib = new FTNode(node_i->GetData(), "i");
-    FTNode* node_c_fib = new FTNode(node_c->GetData(), "c");
-    FTNode* node_g_fib = new FTNode(node_g->GetData(), "g");
-    FTNode* node_f_fib = new FTNode(node_f->GetData(), "f");
-    FTNode* node_d_fib = new FTNode(node_d->GetData(), "d");
-    FTNode* node_e_fib = new FTNode(node_e->GetData(), "e");
 
     //Generate the correspondence between Fibonacci Node & LinkedListNode
-    std::unordered_map<LinkedListNode*, FTNode*> map_node_ll2ft;
-    std::unordered_map<FTNode*, LinkedListNode*> map_node_ft2ll;
     std::unordered_map<std::string, LinkedListNode*> map_node_st2ll;
     std::unordered_map<FTNode*, MST_Edge*> map_node_ft2edge;
-
-    map_node_ll2ft[node_a] = node_a_fib;
-    map_node_ll2ft[node_b] = node_b_fib;
-    map_node_ll2ft[node_h] = node_h_fib;
-    map_node_ll2ft[node_i] = node_i_fib;
-    map_node_ll2ft[node_c] = node_c_fib;
-    map_node_ll2ft[node_g] = node_g_fib;
-    map_node_ll2ft[node_f] = node_f_fib;
-    map_node_ll2ft[node_d] = node_d_fib;
-    map_node_ll2ft[node_e] = node_e_fib;
-
-    map_node_ft2ll[node_a_fib] = node_a;
-    map_node_ft2ll[node_b_fib] = node_b;
-    map_node_ft2ll[node_h_fib] = node_h;
-    map_node_ft2ll[node_i_fib] = node_i;
-    map_node_ft2ll[node_c_fib] = node_c;
-    map_node_ft2ll[node_g_fib] = node_g;
-    map_node_ft2ll[node_f_fib] = node_f;
-    map_node_ft2ll[node_d_fib] = node_d;
-    map_node_ft2ll[node_e_fib] = node_e;
 
     map_node_st2ll["a"] = node_a;
     map_node_st2ll["b"] = node_b;
@@ -105,39 +72,6 @@ int main(){
             std::cout<<all_node[i]->GetName()<<", ";
         }
     }
-
-    std::cout<<"-----------------FTNode-----------------"<<std::endl;
-    std::cout<<"node_a_fib = ("<<node_a_fib->GetKey()<<", "<<node_a_fib<<")"<<std::endl;
-    std::cout<<"node_b_fib = ("<<node_b_fib->GetKey()<<", "<<node_b_fib<<")"<<std::endl;
-    std::cout<<"node_h_fib = ("<<node_h_fib->GetKey()<<", "<<node_h_fib<<")"<<std::endl;
-    std::cout<<"node_i_fib = ("<<node_i_fib->GetKey()<<", "<<node_i_fib<<")"<<std::endl;
-    std::cout<<"node_c_fib = ("<<node_c_fib->GetKey()<<", "<<node_c_fib<<")"<<std::endl;
-    std::cout<<"node_g_fib = ("<<node_g_fib->GetKey()<<", "<<node_g_fib<<")"<<std::endl;
-    std::cout<<"node_f_fib = ("<<node_f_fib->GetKey()<<", "<<node_f_fib<<")"<<std::endl;
-    std::cout<<"node_d_fib = ("<<node_d_fib->GetKey()<<", "<<node_d_fib<<")"<<std::endl;
-    std::cout<<"node_e_fib = ("<<node_e_fib->GetKey()<<", "<<node_e_fib<<")"<<std::endl;
-
-    std::cout<<"-----------------map_node_ll2ft-----------------"<<std::endl;
-    std::cout<<"map_node_ll2ft["<<node_a<<"] = ("<<map_node_ll2ft[node_a]->GetKey()<<", "<<map_node_ll2ft[node_a]<<")"<<std::endl;
-    std::cout<<"map_node_ll2ft["<<node_b<<"] = ("<<map_node_ll2ft[node_b]->GetKey()<<", "<<map_node_ll2ft[node_b]<<")"<<std::endl;
-    std::cout<<"map_node_ll2ft["<<node_h<<"] = ("<<map_node_ll2ft[node_h]->GetKey()<<", "<<map_node_ll2ft[node_h]<<")"<<std::endl;
-    std::cout<<"map_node_ll2ft["<<node_i<<"] = ("<<map_node_ll2ft[node_i]->GetKey()<<", "<<map_node_ll2ft[node_i]<<")"<<std::endl;
-    std::cout<<"map_node_ll2ft["<<node_c<<"] = ("<<map_node_ll2ft[node_c]->GetKey()<<", "<<map_node_ll2ft[node_c]<<")"<<std::endl;
-    std::cout<<"map_node_ll2ft["<<node_g<<"] = ("<<map_node_ll2ft[node_g]->GetKey()<<", "<<map_node_ll2ft[node_g]<<")"<<std::endl;
-    std::cout<<"map_node_ll2ft["<<node_f<<"] = ("<<map_node_ll2ft[node_f]->GetKey()<<", "<<map_node_ll2ft[node_f]<<")"<<std::endl;
-    std::cout<<"map_node_ll2ft["<<node_d<<"] = ("<<map_node_ll2ft[node_d]->GetKey()<<", "<<map_node_ll2ft[node_d]<<")"<<std::endl;
-    std::cout<<"map_node_ll2ft["<<node_e<<"] = ("<<map_node_ll2ft[node_e]->GetKey()<<", "<<map_node_ll2ft[node_e]<<")"<<std::endl;
-
-    std::cout<<"-----------------map_node_ft2ll-----------------"<<std::endl;
-    std::cout<<"map_node_ft2ll["<<node_a_fib<<"] = ("<<map_node_ft2ll[node_a_fib]->GetData()<<", "<<map_node_ft2ll[node_a_fib]<<")"<<std::endl;
-    std::cout<<"map_node_ft2ll["<<node_b_fib<<"] = ("<<map_node_ft2ll[node_b_fib]->GetData()<<", "<<map_node_ft2ll[node_b_fib]<<")"<<std::endl;
-    std::cout<<"map_node_ft2ll["<<node_h_fib<<"] = ("<<map_node_ft2ll[node_h_fib]->GetData()<<", "<<map_node_ft2ll[node_h_fib]<<")"<<std::endl;
-    std::cout<<"map_node_ft2ll["<<node_i_fib<<"] = ("<<map_node_ft2ll[node_i_fib]->GetData()<<", "<<map_node_ft2ll[node_i_fib]<<")"<<std::endl;
-    std::cout<<"map_node_ft2ll["<<node_c_fib<<"] = ("<<map_node_ft2ll[node_c_fib]->GetData()<<", "<<map_node_ft2ll[node_c_fib]<<")"<<std::endl;
-    std::cout<<"map_node_ft2ll["<<node_g_fib<<"] = ("<<map_node_ft2ll[node_g_fib]->GetData()<<", "<<map_node_ft2ll[node_g_fib]<<")"<<std::endl;
-    std::cout<<"map_node_ft2ll["<<node_f_fib<<"] = ("<<map_node_ft2ll[node_f_fib]->GetData()<<", "<<map_node_ft2ll[node_f_fib]<<")"<<std::endl;
-    std::cout<<"map_node_ft2ll["<<node_d_fib<<"] = ("<<map_node_ft2ll[node_d_fib]->GetData()<<", "<<map_node_ft2ll[node_d_fib]<<")"<<std::endl;
-    std::cout<<"map_node_ft2ll["<<node_e_fib<<"] = ("<<map_node_ft2ll[node_e_fib]->GetData()<<", "<<map_node_ft2ll[node_e_fib]<<")"<<std::endl;
 
     std::cout<<"-----------------map_node_st2ll-----------------"<<std::endl;
     std::cout<<"map_node_st2ll[a] = ("<<map_node_st2ll["a"]->GetData()<<", "<<map_node_st2ll["a"]<<")"<<std::endl;
@@ -188,11 +122,11 @@ int main(){
     std::cout<<"-----------------Kruskal_Algorithm::InitialSet-----------------"<<std::endl;
     Kruskal_Algorithm::InitialSet(fib_heap_q, all_node, map_node_ft2edge, map_node_st2ll, a1);
     fib_heap_q.Traverse();
-//    std::cout<<"-----------------Kruskal_Algorithm::FindMST-----------------"<<std::endl;
-//    Kruskal_Algorithm::FindMST(fib_heap_q, final_mst, map_node_ft2ll, map_node_st2ll, map_node_ll2ft, a1);
-//    Kruskal_Algorithm::PrintMST(final_mst, 5);
-//    std::cout<<"-----------------Kruskal_Algorithm::Release-----------------"<<std::endl;
-//    Kruskal_Algorithm::Release(final_mst);
+    std::cout<<"-----------------Kruskal_Algorithm::FindMST-----------------"<<std::endl;
+    Kruskal_Algorithm::FindMST(fib_heap_q, final_mst, a1, all_node.size(), map_node_ft2edge);
+    Kruskal_Algorithm::PrintMST(final_mst, 5);
+    std::cout<<"-----------------Kruskal_Algorithm::Release-----------------"<<std::endl;
+    Kruskal_Algorithm::Release(final_mst);
 
     return EXIT_SUCCESS;
 }

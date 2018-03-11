@@ -1,190 +1,183 @@
 rm -rf ../exec_output/Linked_List.o
 rm -rf ../exec_output/Fibonacci_Heap.o
 rm -rf ../exec_output/AdjList.o
+rm -rf ../exec_output/Union_Find.o
 rm -rf ../exec_output/Kruskal.o
 rm -rf ../exec_output/Kruskal_main.o
 rm -rf ./tags
-g++ -g -Wall -O3 -std=c++11  -c ../Linked_List_ex/Linked_List.cpp  -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include  -I ../Adjacent_List/include  -I ../MST_Edge/include -o ../exec_output/Linked_List.o
-g++ -g -Wall -O3 -std=c++11  -c ../Fibonacci_Heap_ex/Fibonacci_Heap.cpp  -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include  -I ../Adjacent_List/include  -I ../MST_Edge/include -o ../exec_output/Fibonacci_Heap.o
-g++ -g -Wall -O3 -std=c++11  -c ../Adjacent_List/AdjList.cpp  -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include  -I ../Adjacent_List/include  -I ../MST_Edge/include -o ../exec_output/AdjList.o
-g++ -g -Wall -O3 -std=c++11   -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include  -I ../Adjacent_List/include  -I ../MST_Edge/include -c Kruskal.cpp -o ../exec_output/Kruskal.o
+g++ -g -Wall -O3 -std=c++11  -c ../Linked_List/Linked_List.cpp  -I ./include  -I ../Fibonacci_Heap/include  -I ../Linked_List/include  -I ../Adjacent_List/include  -I ../MST_Edge/include  -I ../Union_Find/include -o ../exec_output/Linked_List.o
+g++ -g -Wall -O3 -std=c++11  -c ../Fibonacci_Heap/Fibonacci_Heap.cpp  -I ./include  -I ../Fibonacci_Heap/include  -I ../Linked_List/include  -I ../Adjacent_List/include  -I ../MST_Edge/include  -I ../Union_Find/include -o ../exec_output/Fibonacci_Heap.o
+g++ -g -Wall -O3 -std=c++11  -c ../Adjacent_List/AdjList.cpp  -I ./include  -I ../Fibonacci_Heap/include  -I ../Linked_List/include  -I ../Adjacent_List/include  -I ../MST_Edge/include  -I ../Union_Find/include -o ../exec_output/AdjList.o
+g++ -g -Wall -O3 -std=c++11  -c ../Union_Find/Union_Find.cpp  -I ./include  -I ../Fibonacci_Heap/include  -I ../Linked_List/include  -I ../Adjacent_List/include  -I ../MST_Edge/include  -I ../Union_Find/include -o ../exec_output/Union_Find.o
+g++ -g -Wall -O3 -std=c++11   -I ./include  -I ../Fibonacci_Heap/include  -I ../Linked_List/include  -I ../Adjacent_List/include  -I ../MST_Edge/include  -I ../Union_Find/include -c Kruskal.cpp -o ../exec_output/Kruskal.o
 /usr/local/bin/ctags -R ./*
-/usr/local/bin/ctags -a ./include/* -a ../Fibonacci_Heap_ex/* -a ../Fibonacci_Heap_ex/include/* -a ../Linked_List_ex/* -a ../Linked_List_ex/include/* -a ../Adjacent_List/* -a ../Adjacent_List/include/* -a ../MST_Edge/include/*
-g++ -g -Wall -O3 -std=c++11   -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include  -I ../Adjacent_List/include  -I ../MST_Edge/include ../exec_output/Linked_List.o ../exec_output/Fibonacci_Heap.o ../exec_output/AdjList.o ../exec_output/Kruskal.o Kruskal_main.cpp -o ../exec_output/Kruskal_main.o
+/usr/local/bin/ctags -a ./include/* -a ../Fibonacci_Heap/* -a ../Fibonacci_Heap/include/* -a ../Linked_List/* -a ../Linked_List/include/* -a ../Adjacent_List/* -a ../Adjacent_List/include/* -a ../MST_Edge/include/* -a ../Union_Find/* -a ../Union_Find/include/*
+g++ -g -Wall -O3 -std=c++11   -I ./include  -I ../Fibonacci_Heap/include  -I ../Linked_List/include  -I ../Adjacent_List/include  -I ../MST_Edge/include  -I ../Union_Find/include ../exec_output/Linked_List.o ../exec_output/Fibonacci_Heap.o ../exec_output/AdjList.o ../exec_output/Union_Find.o ../exec_output/Kruskal.o Kruskal_main.cpp -o ../exec_output/Kruskal_main.o
 ../exec_output/Kruskal_main.o
 -----------------LinkedListNode-----------------
-node_a = (2147483647, 0x7fdb62403270)
-node_b = (2147483647, 0x7fdb624032a0)
-node_h = (2147483647, 0x7fdb624032d0)
-node_i = (2147483647, 0x7fdb62403300)
-node_c = (2147483647, 0x7fdb62403330)
-node_g = (2147483647, 0x7fdb62403370)
-node_f = (2147483647, 0x7fdb624033a0)
-node_d = (2147483647, 0x7fdb624033d0)
-node_e = (2147483647, 0x7fdb62403400)
+node_a = (2147483647, 0x7fac40c03270)
+node_b = (2147483647, 0x7fac40c032a0)
+node_h = (2147483647, 0x7fac40c032d0)
+node_i = (2147483647, 0x7fac40c03300)
+node_c = (2147483647, 0x7fac40c03330)
+node_g = (2147483647, 0x7fac40c03370)
+node_f = (2147483647, 0x7fac40c033a0)
+node_d = (2147483647, 0x7fac40c033d0)
+node_e = (2147483647, 0x7fac40c03400)
 ----------------All node-----------------
 all_node = [a, b, h, i, c, g, f, d, e]
------------------FTNode-----------------
-node_a_fib = (2147483647, 0x7fdb62403510)
-node_b_fib = (2147483647, 0x7fdb62403560)
-node_h_fib = (2147483647, 0x7fdb624035b0)
-node_i_fib = (2147483647, 0x7fdb62403600)
-node_c_fib = (2147483647, 0x7fdb62403650)
-node_g_fib = (2147483647, 0x7fdb624036a0)
-node_f_fib = (2147483647, 0x7fdb624036f0)
-node_d_fib = (2147483647, 0x7fdb62403740)
-node_e_fib = (2147483647, 0x7fdb62403790)
------------------map_node_ll2ft-----------------
-map_node_ll2ft[0x7fdb62403270] = (2147483647, 0x7fdb62403510)
-map_node_ll2ft[0x7fdb624032a0] = (2147483647, 0x7fdb62403560)
-map_node_ll2ft[0x7fdb624032d0] = (2147483647, 0x7fdb624035b0)
-map_node_ll2ft[0x7fdb62403300] = (2147483647, 0x7fdb62403600)
-map_node_ll2ft[0x7fdb62403330] = (2147483647, 0x7fdb62403650)
-map_node_ll2ft[0x7fdb62403370] = (2147483647, 0x7fdb624036a0)
-map_node_ll2ft[0x7fdb624033a0] = (2147483647, 0x7fdb624036f0)
-map_node_ll2ft[0x7fdb624033d0] = (2147483647, 0x7fdb62403740)
-map_node_ll2ft[0x7fdb62403400] = (2147483647, 0x7fdb62403790)
------------------map_node_ft2ll-----------------
-map_node_ft2ll[0x7fdb62403510] = (2147483647, 0x7fdb62403270)
-map_node_ft2ll[0x7fdb62403560] = (2147483647, 0x7fdb624032a0)
-map_node_ft2ll[0x7fdb624035b0] = (2147483647, 0x7fdb624032d0)
-map_node_ft2ll[0x7fdb62403600] = (2147483647, 0x7fdb62403300)
-map_node_ft2ll[0x7fdb62403650] = (2147483647, 0x7fdb62403330)
-map_node_ft2ll[0x7fdb624036a0] = (2147483647, 0x7fdb62403370)
-map_node_ft2ll[0x7fdb624036f0] = (2147483647, 0x7fdb624033a0)
-map_node_ft2ll[0x7fdb62403740] = (2147483647, 0x7fdb624033d0)
-map_node_ft2ll[0x7fdb62403790] = (2147483647, 0x7fdb62403400)
 -----------------map_node_st2ll-----------------
-map_node_st2ll[a] = (2147483647, 0x7fdb62403270)
-map_node_st2ll[b] = (2147483647, 0x7fdb624032a0)
-map_node_st2ll[h] = (2147483647, 0x7fdb624032d0)
-map_node_st2ll[i] = (2147483647, 0x7fdb62403300)
-map_node_st2ll[c] = (2147483647, 0x7fdb62403330)
-map_node_st2ll[g] = (2147483647, 0x7fdb62403370)
-map_node_st2ll[f] = (2147483647, 0x7fdb624033a0)
-map_node_st2ll[d] = (2147483647, 0x7fdb624033d0)
-map_node_st2ll[e] = (2147483647, 0x7fdb62403400)
+map_node_st2ll[a] = (2147483647, 0x7fac40c03270)
+map_node_st2ll[b] = (2147483647, 0x7fac40c032a0)
+map_node_st2ll[h] = (2147483647, 0x7fac40c032d0)
+map_node_st2ll[i] = (2147483647, 0x7fac40c03300)
+map_node_st2ll[c] = (2147483647, 0x7fac40c03330)
+map_node_st2ll[g] = (2147483647, 0x7fac40c03370)
+map_node_st2ll[f] = (2147483647, 0x7fac40c033a0)
+map_node_st2ll[d] = (2147483647, 0x7fac40c033d0)
+map_node_st2ll[e] = (2147483647, 0x7fac40c03400)
 -----------------Set Adjacent List of Graph(V, E)-----------------
 -----------------AdjList::PrintAdjList, node_a-----------------
 [4 8]
 [b h]
-[0x7fdb62403cb0 0x7fdb62403e60]
-first = 0x7fdb62403cb0
-last = 0x7fdb62403e60
-map_weight[a] = [4(0x7fdb62403270, 0x7fdb624032a0), 8(0x7fdb62403270, 0x7fdb624032d0)]
+[0x7fac40c036e0 0x7fac40c03890]
+first = 0x7fac40c036e0
+last = 0x7fac40c03890
+map_weight[a] = [4(0x7fac40c03270, 0x7fac40c032a0), 8(0x7fac40c03270, 0x7fac40c032d0)]
 -----------------AdjList::PrintAdjList, node_b-----------------
 [4 8 11]
 [a c h]
-[0x7fdb62403da0 0x7fdb62404000 0x7fdb62404120]
-first = 0x7fdb62403da0
-last = 0x7fdb62404120
-map_weight[b] = [4(0x7fdb624032a0, 0x7fdb62403270), 8(0x7fdb624032a0, 0x7fdb62403330), 11(0x7fdb624032a0, 0x7fdb624032d0)]
+[0x7fac40c037d0 0x7fac40c03a30 0x7fac40c03b50]
+first = 0x7fac40c037d0
+last = 0x7fac40c03b50
+map_weight[b] = [4(0x7fac40c032a0, 0x7fac40c03270), 8(0x7fac40c032a0, 0x7fac40c03330), 11(0x7fac40c032a0, 0x7fac40c032d0)]
 -----------------AdjList::PrintAdjList, node_h-----------------
 [8 11 1 7]
 [a b g i]
-[0x7fdb62403ed0 0x7fdb624041a0 0x7fdb624041f0 0x7fdb62404360]
-first = 0x7fdb62403ed0
-last = 0x7fdb62404360
-map_weight[h] = [8(0x7fdb624032d0, 0x7fdb62403270), 11(0x7fdb624032d0, 0x7fdb624032a0), 1(0x7fdb624032d0, 0x7fdb62403370), 7(0x7fdb624032d0, 0x7fdb62403300)]
+[0x7fac40c03900 0x7fac40c03bd0 0x7fac40c03c20 0x7fac40c03d90]
+first = 0x7fac40c03900
+last = 0x7fac40c03d90
+map_weight[h] = [8(0x7fac40c032d0, 0x7fac40c03270), 11(0x7fac40c032d0, 0x7fac40c032a0), 1(0x7fac40c032d0, 0x7fac40c03370), 7(0x7fac40c032d0, 0x7fac40c03300)]
 -----------------AdjList::PrintAdjList, node_c-----------------
 [8 2 7 4]
 [b i d f]
-[0x7fdb62404070 0x7fdb624046e0 0x7fdb624047b0 0x7fdb62404900]
-first = 0x7fdb62404070
-last = 0x7fdb62404900
-map_weight[c] = [8(0x7fdb62403330, 0x7fdb624032a0), 2(0x7fdb62403330, 0x7fdb62403300), 7(0x7fdb62403330, 0x7fdb624033d0), 4(0x7fdb62403330, 0x7fdb624033a0)]
+[0x7fac40c03aa0 0x7fac40c04110 0x7fac40c041e0 0x7fac40c04330]
+first = 0x7fac40c03aa0
+last = 0x7fac40c04330
+map_weight[c] = [8(0x7fac40c03330, 0x7fac40c032a0), 2(0x7fac40c03330, 0x7fac40c03300), 7(0x7fac40c03330, 0x7fac40c033d0), 4(0x7fac40c03330, 0x7fac40c033a0)]
 -----------------AdjList::PrintAdjList, node_i-----------------
 [7 6 2]
 [h g c]
-[0x7fdb624043d0 0x7fdb62404690 0x7fdb62404730]
-first = 0x7fdb624043d0
-last = 0x7fdb62404730
-map_weight[i] = [7(0x7fdb62403300, 0x7fdb624032d0), 6(0x7fdb62403300, 0x7fdb62403370), 2(0x7fdb62403300, 0x7fdb62403330)]
+[0x7fac40c03e00 0x7fac40c040c0 0x7fac40c04160]
+first = 0x7fac40c03e00
+last = 0x7fac40c04160
+map_weight[i] = [7(0x7fac40c03300, 0x7fac40c032d0), 6(0x7fac40c03300, 0x7fac40c03370), 2(0x7fac40c03300, 0x7fac40c03330)]
 -----------------AdjList::PrintAdjList, node_g-----------------
 [1 2 6]
 [h f i]
-[0x7fdb62404290 0x7fdb62403fb0 0x7fdb62404610]
-first = 0x7fdb62404290
-last = 0x7fdb62404610
-map_weight[g] = [1(0x7fdb62403370, 0x7fdb624032d0), 2(0x7fdb62403370, 0x7fdb624033a0), 6(0x7fdb62403370, 0x7fdb62403300)]
+[0x7fac40c03cc0 0x7fac40c039e0 0x7fac40c04040]
+first = 0x7fac40c03cc0
+last = 0x7fac40c04040
+map_weight[g] = [1(0x7fac40c03370, 0x7fac40c032d0), 2(0x7fac40c03370, 0x7fac40c033a0), 6(0x7fac40c03370, 0x7fac40c03300)]
 -----------------AdjList::PrintAdjList, node_d-----------------
 [7 14 9]
 [c f e]
-[0x7fdb62404850 0x7fdb62404a20 0x7fdb62404bd0]
-first = 0x7fdb62404850
-last = 0x7fdb62404bd0
-map_weight[d] = [7(0x7fdb624033d0, 0x7fdb62403330), 14(0x7fdb624033d0, 0x7fdb624033a0), 9(0x7fdb624033d0, 0x7fdb62403400)]
+[0x7fac40c04280 0x7fac40c04450 0x7fac40c04600]
+first = 0x7fac40c04280
+last = 0x7fac40c04600
+map_weight[d] = [7(0x7fac40c033d0, 0x7fac40c03330), 14(0x7fac40c033d0, 0x7fac40c033a0), 9(0x7fac40c033d0, 0x7fac40c03400)]
 -----------------AdjList::PrintAdjList, node_e-----------------
 [10 9]
 [f d]
-[0x7fdb62404ae0 0x7fdb62404c50]
-first = 0x7fdb62404ae0
-last = 0x7fdb62404c50
-map_weight[e] = [10(0x7fdb62403400, 0x7fdb624033a0), 9(0x7fdb62403400, 0x7fdb624033d0)]
+[0x7fac40c04510 0x7fac40c04680]
+first = 0x7fac40c04510
+last = 0x7fac40c04680
+map_weight[e] = [10(0x7fac40c03400, 0x7fac40c033a0), 9(0x7fac40c03400, 0x7fac40c033d0)]
 -----------------AdjList::PrintAdjList, node_f-----------------
 [2 4 14 10]
 [g c d e]
-[0x7fdb62404560 0x7fdb62404950 0x7fdb624049a0 0x7fdb62404a70]
-first = 0x7fdb62404560
-last = 0x7fdb62404a70
-map_weight[f] = [2(0x7fdb624033a0, 0x7fdb62403370), 4(0x7fdb624033a0, 0x7fdb62403330), 14(0x7fdb624033a0, 0x7fdb624033d0), 10(0x7fdb624033a0, 0x7fdb62403400)]
+[0x7fac40c03f90 0x7fac40c04380 0x7fac40c043d0 0x7fac40c044a0]
+first = 0x7fac40c03f90
+last = 0x7fac40c044a0
+map_weight[f] = [2(0x7fac40c033a0, 0x7fac40c03370), 4(0x7fac40c033a0, 0x7fac40c03330), 14(0x7fac40c033a0, 0x7fac40c033d0), 10(0x7fac40c033a0, 0x7fac40c03400)]
 -----------------Kruskal_Algorithm::InitialSet-----------------
 ##################################
 #########      F0      ###########
 ##################################
-(8  , 0x7fdb62404df0, 0  , False, a->h, True)
+(8  , 0x7fac40c04820, 0  , False, a->h, True)
 ##################################
 #########      F1      ###########
 ##################################
-(8  , 0x7fdb62404f30, 0  , False, b->c, True)
+(8  , 0x7fac40c04960, 0  , False, b->c, True)
 ##################################
 #########      F2      ###########
 ##################################
-(11 , 0x7fdb62405070, 0  , False, b->h, True)
+(11 , 0x7fac40c04aa0, 0  , False, b->h, True)
 ##################################
 #########      F3      ###########
 ##################################
-(7  , 0x7fdb624052b0, 0  , False, h->i, True)
+(7  , 0x7fac40c04ce0, 0  , False, h->i, True)
 ##################################
 #########      F4      ###########
 ##################################
-(6  , 0x7fdb62405460, 0  , False, i->g, True)
+(6  , 0x7fac40c04e90, 0  , False, i->g, True)
 ##################################
 #########      F5      ###########
 ##################################
-(2  , 0x7fdb62405530, 0  , False, i->c, True)
+(2  , 0x7fac40c04f60, 0  , False, i->c, True)
 ##################################
 #########      F6      ###########
 ##################################
-(7  , 0x7fdb62405600, 0  , False, c->d, True)
+(7  , 0x7fac40c05030, 0  , False, c->d, True)
 ##################################
 #########      F7      ###########
 ##################################
-(4  , 0x7fdb62405740, 0  , False, c->f, True)
+(4  , 0x7fac40c05170, 0  , False, c->f, True)
 ##################################
 #########      F8      ###########
 ##################################
-(2  , 0x7fdb62405850, 0  , False, g->f, True)
+(2  , 0x7fac40c05280, 0  , False, g->f, True)
 ##################################
 #########      F9      ###########
 ##################################
-(14 , 0x7fdb62405950, 0  , False, f->d, True)
+(14 , 0x7fac40c05380, 0  , False, f->d, True)
 ##################################
 #########      F10      ###########
 ##################################
-(10 , 0x7fdb62405af0, 0  , False, f->e, True)
+(10 , 0x7fac40c05520, 0  , False, f->e, True)
 ##################################
 #########      F11      ###########
 ##################################
-(9  , 0x7fdb62405bc0, 0  , False, d->e, True)
+(9  , 0x7fac40c055f0, 0  , False, d->e, True)
 ##################################
 #########      F12      ###########
 ##################################
-(1  , 0x7fdb62405170, 0  , False, h->g, True)
+(1  , 0x7fac40c04ba0, 0  , False, h->g, True)
 ##################################
 #########      F13      ###########
 ##################################
-(4  , 0x7fdb62404ce0, 0  , False, a->b, True)
+(4  , 0x7fac40c04710, 0  , False, a->b, True)
+-----------------Kruskal_Algorithm::FindMST-----------------
+It is UnionFind destructor.
+MST : 
+(    h -->     g, weight =     1)
+(    i -->     c, weight =     2)
+(    g -->     f, weight =     2)
+(    a -->     b, weight =     4)
+(    c -->     f, weight =     4)
+(    c -->     d, weight =     7)
+(    b -->     c, weight =     8)
+(    d -->     e, weight =     9)
+minimum total edge weight = 37
+-----------------Kruskal_Algorithm::Release-----------------
+It is MST_Edge destructor.
+It is MST_Edge destructor.
+It is MST_Edge destructor.
+It is MST_Edge destructor.
+It is MST_Edge destructor.
+It is MST_Edge destructor.
+It is MST_Edge destructor.
+It is MST_Edge destructor.
 It is Fibonacci_Heap destructor.
 It is AdjList destructor.
 It is LinkedList destructor.

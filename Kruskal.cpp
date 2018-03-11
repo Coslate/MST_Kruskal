@@ -4,7 +4,7 @@
 #include <unordered_map>
 #include <Kruskal.h>
 
-void Kruskal_Algorithm::InitialSet(Fibonacci_Heap &fib_heap_q, const std::vector<LinkedListNode*> &all_node, std::unordered_map<FTNode*, MST_Edge*> map_node_ft2edge, std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, AdjList &adj_list){
+void Kruskal_Algorithm::InitialSet(Fibonacci_Heap &fib_heap_q, const std::vector<LinkedListNode*> &all_node, std::unordered_map<FTNode*, MST_Edge*> &map_node_ft2edge, std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, AdjList &adj_list){
     std::unordered_map<LinkedListNode*, std::unordered_map<LinkedListNode*, bool>> map_edge_added;
 
     for(size_t i=0;i<all_node.size();++i){
@@ -31,47 +31,19 @@ void Kruskal_Algorithm::InitialSet(Fibonacci_Heap &fib_heap_q, const std::vector
         }
     }
 }
-bool Kruskal_Algorithm::CheckIsTheEdge(std::unordered_map<LinkedListNode*, std::unordered_map<LinkedListNode*, int>> &map_weight, LinkedListNode* const candidate_parent, const int &edge_weight, LinkedListNode* const min_ll_node, std::unordered_map<LinkedListNode*, FTNode*> map_node_ll2ft){
-    if((map_weight[candidate_parent].find(min_ll_node) != map_weight[candidate_parent].end()) && (edge_weight == map_node_ll2ft[min_ll_node]->GetKey())){
-        return true;
-    }else{
-        return false;
-    }
-}
-void Kruskal_Algorithm::FindMST(Fibonacci_Heap &fib_heap_q, std::vector<MST_Edge*> &final_mst, std::unordered_map<FTNode*, LinkedListNode*> &map_node_ft2ll, std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, std::unordered_map<LinkedListNode*, FTNode*> map_node_ll2ft, AdjList &adj_list){
-    std::unordered_map<LinkedListNode*, std::unordered_map<LinkedListNode*, int>> map_weight = adj_list.ReadMapWeight();
+void Kruskal_Algorithm::FindMST(Fibonacci_Heap &fib_heap_q, std::vector<MST_Edge*> &final_mst, AdjList &adj_list, const int all_node_size, std::unordered_map<FTNode*, MST_Edge*> map_node_ft2edge){
+    UnionFind uf_forest;
 
-    while(fib_heap_q.GetTotalNodeNum() != 0){
-        //Extractmin from the Fibonacci_Heap
-        FTNode* min_ft_node = fib_heap_q.ExtractMin();
-        LinkedListNode* min_ll_node = map_node_ft2ll[min_ft_node];
+    while(uf_forest.GetMaxWeight() < all_node_size){
+        FTNode* ex_edge_node = fib_heap_q.ExtractMin();
+        MST_Edge* ex_edge = map_node_ft2edge[ex_edge_node];
+        LinkedListNode* u_node = ex_edge->RetEdgeA();
+        LinkedListNode* v_node = ex_edge->RetEdgeB();
 
-        //Inserted the MST edge to final_mst
-        if(final_mst.size() == 0){
-            MST_Edge* inserted_edge = new MST_Edge(NULL, min_ll_node, 0);
-            final_mst.push_back(inserted_edge);
-        }else{
-            for(std::vector<MST_Edge*>::reverse_iterator i = final_mst.rbegin(); i!=final_mst.rend(); ++i){
-                LinkedListNode* candidate_parent = (*i)->RetEdgeB();
-                int edge_weight = map_weight[candidate_parent][min_ll_node];
-                if(CheckIsTheEdge(map_weight, candidate_parent, edge_weight, min_ll_node, map_node_ll2ft)){
-                    MST_Edge* inserted_edge = new MST_Edge(candidate_parent, min_ll_node, edge_weight);
-                    final_mst.push_back(inserted_edge);
-                    break;
-                }
-            }
-        }
-        
-        if(fib_heap_q.GetTotalNodeNum() != 0){
-            //Decrease all the adjacent node with the value of edge weight
-            LinkedList* the_linked_list = adj_list.ReadAdjList(min_ll_node);
-            LinkedListNode* current_node = the_linked_list->GetFristNode();
-            while(current_node != NULL){
-                LinkedListNode* node_to_decrease_ll = map_node_st2ll[current_node->GetName()];
-                FTNode* node_to_decrease = map_node_ll2ft[node_to_decrease_ll];
-                fib_heap_q.DecreaseKey(node_to_decrease, map_weight[min_ll_node][node_to_decrease_ll]);
-                current_node = current_node->GetNext();
-            }
+        if(uf_forest.Union(u_node, v_node)){
+
+            //Inserted the MST edge to final_mst
+            final_mst.push_back(ex_edge);
         }
     }
 }
